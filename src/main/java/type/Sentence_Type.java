@@ -16,11 +16,11 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 /**
  * Updated by JCasGen Tue Sep 23 00:57:24 EDT 2014
  * 
- * @generated
+ * 
  */
 public class Sentence_Type extends Annotation_Type {
   /**
-   * @generated
+   * 
    * @return the generator for this type
    */
   @Override
@@ -28,7 +28,7 @@ public class Sentence_Type extends Annotation_Type {
     return fsGenerator;
   }
 
-  /** @generated */
+  /**  */
   private final FSGenerator fsGenerator = new FSGenerator() {
     public FeatureStructure createFS(int addr, CASImpl cas) {
       if (Sentence_Type.this.useExistingInstance) {
@@ -45,25 +45,25 @@ public class Sentence_Type extends Annotation_Type {
     }
   };
 
-  /** @generated */
+  /**  */
   @SuppressWarnings("hiding")
   public final static int typeIndexID = Sentence.typeIndexID;
 
   /**
-   * @generated
+   * 
    * @modifiable
    */
   @SuppressWarnings("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("type.Sentence");
 
-  /** @generated */
+  /**  */
   final Feature casFeat_ID;
 
-  /** @generated */
+  /**  */
   final int casFeatCode_ID;
 
   /**
-   * @generated
+   * 
    * @param addr
    *          low level Feature Structure reference
    * @return the feature value
@@ -75,7 +75,7 @@ public class Sentence_Type extends Annotation_Type {
   }
 
   /**
-   * @generated
+   * 
    * @param addr
    *          low level Feature Structure reference
    * @param v
@@ -87,14 +87,14 @@ public class Sentence_Type extends Annotation_Type {
     ll_cas.ll_setStringValue(addr, casFeatCode_ID, v);
   }
 
-  /** @generated */
+  /**  */
   final Feature casFeat_Words;
 
-  /** @generated */
+  /**  */
   final int casFeatCode_Words;
 
   /**
-   * @generated
+   * 
    * @param addr
    *          low level Feature Structure reference
    * @return the feature value
@@ -106,7 +106,7 @@ public class Sentence_Type extends Annotation_Type {
   }
 
   /**
-   * @generated
+   * 
    * @param addr
    *          low level Feature Structure reference
    * @param v
@@ -121,7 +121,7 @@ public class Sentence_Type extends Annotation_Type {
   /**
    * initialize variables to correspond with Cas Type and Features
    * 
-   * @generated
+   * 
    * @param jcas
    *          JCas
    * @param casType

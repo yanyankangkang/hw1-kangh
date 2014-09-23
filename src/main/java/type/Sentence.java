@@ -11,25 +11,25 @@ import org.apache.uima.jcas.tcas.Annotation;
  * Updated by JCasGen Tue Sep 23 00:57:24 EDT 2014 XML source:
  * /home/mac/workspace/11791/hw1-kangh/src/main/resources/typeSystemDescriptor.xml
  * 
- * @generated
+ * 
  */
 public class Sentence extends Annotation {
   /**
-   * @generated
-   * @ordered
+   * 
+   * 
    */
   @SuppressWarnings("hiding")
   public final static int typeIndexID = JCasRegistry.register(Sentence.class);
 
   /**
-   * @generated
-   * @ordered
+   * 
+   * 
    */
   @SuppressWarnings("hiding")
   public final static int type = typeIndexID;
 
   /**
-   * @generated
+   * 
    * @return index of the type
    */
   @Override
@@ -40,7 +40,7 @@ public class Sentence extends Annotation {
   /**
    * Never called. Disable default constructor
    * 
-   * @generated
+   * 
    */
   protected Sentence() {/* intentionally empty block */
   }
@@ -48,7 +48,7 @@ public class Sentence extends Annotation {
   /**
    * Internal - constructor used by generator
    * 
-   * @generated
+   * 
    * @param addr
    *          low level Feature Structure reference
    * @param type
@@ -60,7 +60,7 @@ public class Sentence extends Annotation {
   }
 
   /**
-   * @generated
+   * 
    * @param jcas
    *          JCas to which this Feature Structure belongs
    */
@@ -70,7 +70,7 @@ public class Sentence extends Annotation {
   }
 
   /**
-   * @generated
+   * 
    * @param jcas
    *          JCas to which this Feature Structure belongs
    * @param begin
@@ -88,7 +88,7 @@ public class Sentence extends Annotation {
   /**
    * <!-- begin-user-doc --> Write your own initialization here <!-- end-user-doc -->
    *
-   * @generated modifiable
+   *  modifiable
    */
   private void readObject() {/* default - does nothing empty block */
   }
@@ -99,7 +99,7 @@ public class Sentence extends Annotation {
   /**
    * getter for ID - gets The ID of each sentence
    * 
-   * @generated
+   * 
    * @return value of the feature
    */
   public String getID() {
@@ -111,7 +111,7 @@ public class Sentence extends Annotation {
   /**
    * setter for ID - sets The ID of each sentence
    * 
-   * @generated
+   * 
    * @param v
    *          value to set into the feature
    */
@@ -127,7 +127,7 @@ public class Sentence extends Annotation {
   /**
    * getter for Words - gets all the words of sentence in each line
    * 
-   * @generated
+   * 
    * @return value of the feature
    */
   public String getWords() {
@@ -139,7 +139,7 @@ public class Sentence extends Annotation {
   /**
    * setter for Words - sets all the words of sentence in each line
    * 
-   * @generated
+   * 
    * @param v
    *          value to set into the feature
    */
