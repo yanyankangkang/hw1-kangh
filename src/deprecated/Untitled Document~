@@ -1,0 +1,32 @@
+Gene_Recognizer   
+// TODO Auto-generated method stub
+ /*   MapDictionary<String> dictionary = new MapDictionary<String>();
+    helper list = null;
+   
+    try {
+      list = new helper("src/main/resources/data/sample.out");
+    } catch (FileNotFoundException e1) {
+      // TODO Auto-generated catch block
+      e1.printStackTrace();
+    }
+    for (String word : helper.dict){
+      dictionary.addEntry(new DictionaryEntry<String>(word,"Gene",1.0));
+    }*/
+
+  /*  PosTagNamedEntityRecognizer rec = null;
+    try {
+      rec = new PosTagNamedEntityRecognizer();
+    } catch (ResourceInitializationException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } catch (FileNotFoundException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }*/
+  /*  helper help = null ;
+    try {
+      help = new helper("src/main/resources/data/sample.out");
+    } catch (FileNotFoundException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }*/
