@@ -28,7 +28,7 @@ public class Gene_Recognizer extends JCasAnnotator_ImplBase {
   /**
    * the maximum length of potential gene words
    */
-  private static final int MAX_N_BEST_CHUNKS = 10;
+  private static final int MAX_N_BEST_CHUNKS = 15;
 
   /**
    * the name of NER gene model
@@ -103,7 +103,7 @@ public class Gene_Recognizer extends JCasAnnotator_ImplBase {
       while (gene_it.hasNext()) {
         Chunk chunk = gene_it.next();
         double conf = Math.pow(2.0, chunk.score());
-        if (conf < 0.7) {
+        if (conf < 0.65) {
           break;
         }
         int start = chunk.start();
