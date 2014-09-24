@@ -51,7 +51,7 @@ public class Sentence_Type extends Annotation_Type {
 
   /**
    * 
-   * @
+   * 
    */
   @SuppressWarnings("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("type.Sentence");
