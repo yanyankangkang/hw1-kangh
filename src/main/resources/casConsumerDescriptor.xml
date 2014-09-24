@@ -7,18 +7,11 @@
     <description/>
     <version>1.0</version>
     <vendor/>
-    <configurationParameters>
-      <configurationParameter>
-        <name>outputFile</name>
-        <type>String</type>
-        <multiValued>false</multiValued>
-        <mandatory>false</mandatory>
-      </configurationParameter>
-    </configurationParameters>
+    <configurationParameters/>
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="typeSystemDescriptor.xml"/>
+        <import name="Type.typeSystemDescriptor"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
@@ -32,7 +25,7 @@
     </capabilities>
   <operationalProperties>
       <modifiesCas>false</modifiesCas>
-      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
       <outputsNewCASes>false</outputsNewCASes>
     </operationalProperties>
   </processingResourceMetaData>

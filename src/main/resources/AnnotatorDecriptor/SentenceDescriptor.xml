@@ -11,7 +11,7 @@
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="typeSystemDescriptor.xml"/>
+        <import name="Type.typeSystemDescriptor"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>

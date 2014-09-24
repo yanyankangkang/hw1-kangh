@@ -15,9 +15,9 @@
         </collectionIterator>
     </collectionReader>
     <casProcessors casPoolSize="3" processingUnitThreadCount="1">
-        <casProcessor deployment="integrated" name="aeDescriptor">
+        <casProcessor deployment="integrated" name="AEDescriptor">
             <descriptor>
-                <import location="AnnotatorDecriptor/aeDescriptor.xml"/>
+                <import location="AnnotatorDecriptor/AEDescriptor.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>
