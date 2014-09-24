@@ -88,7 +88,7 @@ public class Sentence extends Annotation {
   /**
    * <!-- begin-user-doc --> Write your own initialization here <!-- end-user-doc -->
    *
-   *  modifiable
+   *  
    */
   private void readObject() {/* default - does nothing empty block */
   }
