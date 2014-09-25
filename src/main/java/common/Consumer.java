@@ -78,11 +78,7 @@ public class Consumer extends CasConsumer_ImplBase {
                 + (res.getEnd() - res.getOutershift() - res.getInnershift() - 1) + "|"
                 + res.getWords();
         writer.write(ans + "\n");
-        if (table.containsKey(ans)) {
-          hit++;
-        } else {
-          miss++;
-        }
+        Match(ans);
         // }
       } catch (IOException e) {
         // TODO Auto-generated catch block
@@ -98,8 +94,18 @@ public class Consumer extends CasConsumer_ImplBase {
     }
     double P = hit * 1.0 / (hit + miss);
     double R = hit * 1.0 / words;
-    System.out.println("Precision: " + P + " " + "Recall: " + R + " " + "F-Meause: " + 2 * P * R
+    System.out.println("Precision: " + P + " " + "Recall: " + R + "\n" + "F1-Meause: " + 2 * P * R
             / (P + R));
   }
-
+  /**
+   * find whether phrase exists in standard answer set
+   * @param phrase
+   */
+  private void Match(String phrase){
+    if (table.containsKey(phrase)) {
+      hit++;
+    } else {
+      miss++;
+    }
+  }
 }

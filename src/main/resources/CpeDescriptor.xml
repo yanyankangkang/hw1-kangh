@@ -8,16 +8,16 @@
                 <nameValuePair>
                     <name>InputFile</name>
                     <value>
-                        <string>/home/mac/workspace/11791/hw1-kangh/src/main/resources/data/in/sample.in</string>
+                        <string>/home/mac/workspace/11791/hw1-kangh/src/main/resources/data/in/hw1.in</string>
                     </value>
                 </nameValuePair>
             </configurationParameterSettings>
         </collectionIterator>
     </collectionReader>
     <casProcessors casPoolSize="3" processingUnitThreadCount="1">
-        <casProcessor deployment="integrated" name="AEDescriptor">
+        <casProcessor deployment="integrated" name="GeneDescriptor">
             <descriptor>
-                <import location="AnnotatorDecriptor/AEDescriptor.xml"/>
+                <import location="AnnotatorDecriptor/GeneDescriptor.xml"/>
             </descriptor>
             <deploymentParameters/>
             <errorHandling>

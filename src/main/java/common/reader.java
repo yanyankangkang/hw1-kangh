@@ -11,6 +11,8 @@ import org.apache.uima.collection.CollectionReader_ImplBase;
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Progress;
+
+import type.Sentence;
 /** Description of class Reader 
 * @author Kang Huang
 * @version 1.0 Build on Sep 23, 2014.
@@ -39,10 +41,16 @@ public class reader extends CollectionReader_ImplBase {
     Scanner reader = new Scanner(InputFile);
     String text = "";
     while (reader.hasNext()) {
-      text += reader.nextLine();
-      text += "\n";
+     // text += reader.nextLine();
+     // text += "\n";
+      text = reader.nextLine();
+      String s[] = text.split(" ", 2);
+      Sentence Line = new Sentence(jcas);
+      Line.setID(s[0]);
+      Line.setWords(s[1]);
+      Line.addToIndexes(jcas);
     }
-    jcas.setDocumentText(text);
+  // jcas.setDocumentText(text);
   }
 
   @Override

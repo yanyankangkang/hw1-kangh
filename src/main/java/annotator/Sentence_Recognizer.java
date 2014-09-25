@@ -1,3 +1,6 @@
+/**
+ * deprecated
+ */
 package annotator;
 
 import org.apache.uima.analysis_component.JCasAnnotator_ImplBase;
@@ -23,7 +26,7 @@ public class Sentence_Recognizer extends JCasAnnotator_ImplBase {
    */
   public void process(JCas aCas) throws AnalysisEngineProcessException {
     // TODO Auto-generated method stub
-    String text = aCas.getDocumentText();
+ /*   String text = aCas.getDocumentText();
     String lines[] = text.split("\\n");
     System.out.println(lines.length);
     for (int i = 0; i < lines.length; i++) {
@@ -32,6 +35,6 @@ public class Sentence_Recognizer extends JCasAnnotator_ImplBase {
       Line.setID(s[0]);
       Line.setWords(s[1]);
       Line.addToIndexes(aCas);
-    }
+    }*/
   }
 }
