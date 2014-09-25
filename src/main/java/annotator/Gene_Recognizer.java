@@ -46,7 +46,7 @@ public class Gene_Recognizer extends JCasAnnotator_ImplBase {
 
   @Override
   /** 
-   *<p>initialize(UimaContext context) The framework supplies this AnalysisComponent with a reference to the UimaContext that it will use,<br>
+   *<p>The framework supplies this AnalysisComponent with a reference to the UimaContext that it will use,<br>
    * for example to access configuration settings or resources. This AnalysisComponent should store a <br>
    * reference to its the UimaContext for later use.<br>
    * 
@@ -74,7 +74,7 @@ public class Gene_Recognizer extends JCasAnnotator_ImplBase {
 
   @Override
   /**
-   *  process(JCas aCas)  get content of annotation sentence and use NER gene model to classify the sentence in each annotation, 
+   *  get content of annotation sentence and use NER gene model to classify the sentence in each annotation, 
    *  obtain start index and end index of filtered words and
    *  revise by subtracting the number of blanks. the gene annotation also stored the ID and words. 
    * 
